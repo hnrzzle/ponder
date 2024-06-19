@@ -5,7 +5,7 @@ import './App.css'
 import cardData from '../api'
 
 const blackLotus = cardData('Black Lotus');
-console.log(blackLotus);
+// console.log(blackLotus);
 
 function App() {
   const [guessCount, setGuessCount] = useState(0)

@@ -2,11 +2,12 @@ import { Cards } from "scryfall-api";
 
 // Cards.byName("Black Lotus").then(console.log);
 
-const cardData = (cardName) => {
-  // const massiveObj = Cards.search("cmc:3").all();
-  // console.log(massiveObj);
+async function cardData(cardName) {
+  let massiveObj = await Cards.search(`!"${cardName}" not:reprint`).all();
+  console.log(massiveObj);
+
   return massiveObj;
-};
+}
 
 // console.log(cardData("Black Lotus"));
 
