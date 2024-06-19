@@ -3,13 +3,16 @@ import Symbol from './Symbol';
 import './Card.css';
 
 /* TODO:
-  - convert Mana cost into appropriate elements and class Names
+  - test out tap symbol
+  - parse out oracle text for any symbols and convert them
+
+  - create list of relevant words on magic to obfuscate/reveal
+  - get card backgrounds for each color/colorless 
+  
 
 */
 
 function Card ({theCard}) {
-  // console.log(theCard.name);
-  // console.log(theCard.imageURIs);
   const {
     name,
     releaseDate,

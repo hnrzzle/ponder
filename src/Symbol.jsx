@@ -1,11 +1,5 @@
 import React from 'react';
 
-/*
-(<span class="card-text-mana-cost">
-  <abbr class="card-symbol card-symbol-1" title="one generic mana">{1}</abbr>
-  <abbr class="card-symbol card-symbol-G" title="one green mana">{G}</abbr>
-</span>)
-*/
 function Symbol({manaCost}) {
   const parseSymbol = (inputString) => {
     // Use a regular expression to match content inside curly braces
