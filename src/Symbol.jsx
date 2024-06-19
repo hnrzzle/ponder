@@ -7,9 +7,6 @@ import React from 'react';
 </span>)
 */
 function Symbol({manaCost}) {
-
-  
-
   const parseSymbol = (inputString) => {
     // Use a regular expression to match content inside curly braces
     const matches = inputString.match(/\{(.*?)\}/g);
@@ -17,15 +14,15 @@ function Symbol({manaCost}) {
     // Extract the content inside the curly braces and store in an array
     const symbolsArray = matches.map(match => match.slice(1, -1));
 
-    return symbolsArray.length > 1 ? symbolsArray : symbolsArray[0];
+    return symbolsArray;
   }
+  const parsedSymbols = parseSymbol(manaCost);
 
-  console.log('hello');
-  console.log(manaCost);
-  console.log(parseSymbol(manaCost));
   return (
     <span className="card-text-mana-cost">
-      <abbr className={`card-symbol card-symbol-${manaCost}`}>nothing</abbr>
+      {parsedSymbols.map((parsedSymbol, i) => (
+        <abbr key={i} className={`card-symbol card-symbol-${parsedSymbol}`}>{`{${parsedSymbol}}`}</abbr>
+      ))}
     </span>);
 }
 
