@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import cardData from '../api'
 import Card from './Card'
 
-const blackLotus = await cardData('Explore');
+const blackLotus = await cardData('Cursed Wombat');
 // console.log(blackLotus);
 
 function App() {

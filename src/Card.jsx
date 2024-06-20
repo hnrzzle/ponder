@@ -1,6 +1,8 @@
 import React from 'react';
 import Symbol from './Symbol';
+import OracleText from './OracleText';
 import './Card.css';
+
 
 /* TODO:
   - test out tap symbol
@@ -8,7 +10,7 @@ import './Card.css';
 
   - create list of relevant words on magic to obfuscate/reveal
   - get card backgrounds for each color/colorless 
-  
+
 
 */
 
@@ -32,7 +34,7 @@ function Card ({theCard}) {
   <h3>Its card type is: {cardType}</h3>
   <h3>It is from set: {setName}</h3>
   <h3>Its rarity is: {rarity}</h3>
-  <p>{oracleText}</p>
+  <OracleText oracle={oracleText} />
   </>);
 }
 

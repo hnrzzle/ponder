@@ -1,0 +1,12 @@
+.oracleText span:after {
+  content: "\00a0 ";
+}
+
+.oracleText {
+  max-width: 800px; /* Adjust the width as needed */
+  border: 1px solid black;
+}
+
+.oracleText p span {
+  display: inline-block;
+}

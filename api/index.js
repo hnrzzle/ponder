@@ -4,7 +4,7 @@ import { Cards } from "scryfall-api";
 
 async function cardData(cardName) {
   let massiveObj = await Cards.search(`!"${cardName}" not:reprint`).all();
-
+  console.log(massiveObj);
   const stuffWeCareAbout = {
     name: massiveObj[0].name,
     releaseDate: massiveObj[0].released_at,
