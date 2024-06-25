@@ -3,10 +3,12 @@ import Symbol from './Symbol';
 import './OracleText.css';
 
 function OracleText({oracle}) {
+
+  /* TODO:
+  */
   console.log(oracle);
   function parseOracleText(oText) {
     const wordArray = oText.split(' ');
-    console.log
     return wordArray;
   }
 
@@ -17,12 +19,13 @@ function OracleText({oracle}) {
           // Replace line breaks with <br> tags
           const checkForLineBreak = (string) => {
             if(string.includes('\n')) {
-              return <span>{string}<br/></span>;
+              const lineBreakSplit = string.split('\n');
+              return <><span>{lineBreakSplit[0]}</span><br/><span>{lineBreakSplit[1]}</span></>;
             }
-            return string;
+            return <span>{string}</span>;
           }
 
-          return word[0] === '{' ? <Symbol key={i} manaCost={word} /> : <span key={i}>{checkForLineBreak(word)}</span>
+          return word[0] === '{' ? <Symbol key={i} manaCost={word} /> : <React.Fragment key={i}>{checkForLineBreak(word)}</React.Fragment>
         })}
       </p>
     </section>
