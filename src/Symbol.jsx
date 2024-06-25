@@ -15,7 +15,7 @@ function Symbol({manaCost}) {
   return (
     <span className="card-text-mana-cost">
       {parsedSymbols.map((parsedSymbol, i) => (
-        <abbr key={i} className={`card-symbol card-symbol-${parsedSymbol}`}>{`{${parsedSymbol}}`}</abbr>
+        <abbr key={i} className={`card-symbol obfuscate card-symbol-${parsedSymbol}`}>{`{${parsedSymbol}}`}</abbr>
       ))}
     </span>);
 }

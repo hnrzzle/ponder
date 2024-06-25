@@ -1,3 +1,8 @@
+.obfuscate {
+  opacity: 30%;
+  user-select: none;
+}
+
 .oracleText span:after {
   content: "\00a0 ";
 }

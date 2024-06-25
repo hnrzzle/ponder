@@ -18,6 +18,18 @@
   cursor: help
 }
 
+.card-symbol.obfuscate {
+  background-color: #beb9b2;
+    border-radius: 1em;
+    color: #111;
+    font-size: 0.95em;
+    /* width: 1.3em; */
+    /* height: 1.3em; */
+    line-height: 1.35em;
+    text-align: center;
+  background-image: none;
+}
+
 .card-symbol-0 {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdC b3g9JzAgMCAxMDAgMTAwJz48ZyBmaWxsPSdub25lJz48Y2lyY2xlIGZpbGw9 JyNDQUM1QzAnIGN4PSc1MCcgY3k9JzUwJyByPSc1MCcvPjxwYXRoIGQ9J00y MyA1Mi40MjhjMC05Ljc4NyAyLjA2MS0xOC44MTMgNi4xOTEtMjcuMDcyIDUu MTE3LTEwLjIzNiAxMi4xMjMtMTUuMzU1IDIxLjAxMi0xNS4zNTUgOC43OTcg MCAxNS42NjYgNC4zNTkgMjAuNjA1IDEzLjA2NCA0LjEyNyA3LjE4NiA2LjE5 MSAxNS41MzcgNi4xOTEgMjUuMDUxIDAgOS44ODEtMi4wNjQgMTguODE0LTYu MTkxIDI2LjgwMy01LjAzMSAxMC4wNTgtMTIuMDM1IDE1LjA4MS0yMS4wMTEg MTUuMDgxLTguNTMxIDAtMTUuMzA1LTQuMzA3LTIwLjMzNi0xMi45MjYtNC4z MDgtNy4zNjEtNi40NjEtMTUuNTc2LTYuNDYxLTI0LjY0NnptMTEuMzA5LTQu NDQ0YzAgMTIuOTI2IDEuOTMgMjIuOTg0IDUuNzk1IDMwLjE2OCAyLjY5MSA1 LjAyNSA2LjE0NiA3LjU0MSAxMC4zNjcgNy41NDEgMTAuMTQ2IDAgMTUuMjIx LTEwLjUwNiAxNS4yMjEtMzEuNTE4IDAtOS4yNDQtLjgwOS0xNy4wNTktMi40 MjItMjMuNDM0LTIuNzg1LTEwLjUwNC03LjQ5OC0xNS43Ni0xNC4xNDUtMTUu NzYtOS44NzkgMC0xNC44MTYgMTAuMTUtMTQuODE2IDMwLjQ0M3YyLjU2eicg ZmlsbD0nIzBEMEYwRicvPjwvZz48L3N2Zz4K ")
 }
